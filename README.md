@@ -39,3 +39,7 @@ Your playlist uri can be found on spotify by right clicking on the playlist, sha
 
 ## Main.py
 Once everything above is completed, simply running main.py will open your game, spotify, and start your playlist. By grabbing the needed values from "program_info_file", it checks if the game and spotify is running. If not, it will open them. In the background, the program will keep trying to find the device you activated. Once it does, it will start the playlist and the program will end.
+
+## Important Notes
+- You will be asked to enter the uri depending on how long between when you activate the program
+- It only works on the desktop and webplayer
