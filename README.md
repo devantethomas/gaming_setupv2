@@ -7,7 +7,7 @@ Before running the program, you need to create an app using [spotify's api](http
 * Client Secret
 * Redirect URI
 
-The redirect uri can we any website you choose, such as google.com or spotify.com. This is set by going to Edit Setting and putting in the destination under Redirect URIs. You will take these three and create environment variables. When you run either setup.py (only if you ask to it to find your device id) or main.py, you will be prompted on your browser to allow your app to access your spotify. After hitting allow, you will also see a terminal message asking you what uri you were directed to. Copy the url from the search bar into the termal at the prompt.
+The redirect uri can we any website you choose, such as google.com or spotify.com. This is set by going to Edit Setting and putting in the destination under Redirect URIs. You will take these three and create environment variables. When you run either setup.py (only if you ask it to find your device id) or main.py, you will be prompted on your browser to allow your app to access your spotify. After hitting allow, you will also see a terminal message asking you what uri you were directed to. Copy the url after you hit allow from the search bar into the terminal at the prompt.
 
 ## Setup: Environment Variables
 On your windows computer follow this [guide](https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/) to set up environment variables. In short:
@@ -21,7 +21,7 @@ On your windows computer follow this [guide](https://www.architectryan.com/2018/
  Be sure to hit ok after each variable, and finally hit ok on the window containing all the environment variables. Now we can move on to installation.
  
  ## PIP install
- In this project is a requirements.txt in this project. It contains the needed pip installs for the the program to run. Pip should be installed if you have python. In your terminal put:
+ In this project there is a requirements.txt. It contains the needed pip installs for the the program to run. Pip should be installed if you have python. In your terminal put:
  
 ```bash
 pip install -r path\to\requirements.txt
@@ -35,7 +35,7 @@ When everything else is setup, this program will allow you to put the needed inf
 - Playlist uri
 - Device ID
 
-Your playlist uri can be found on spotify by right clicking on the playlist, share, then copy Spotify URI. If you do not know the the device id, enter "n" when prompted and have your desired device open before hitting enter "n". Copy the id for your device and continue to follow the prompts on the terminal. A file named "program_info_file"  will be created in order that holds all this information for the future. Whenever you want to change any settings, run setup.py again.
+Your playlist uri can be found on spotify by right clicking on the playlist, share, then copy Spotify URI. If you do not know the the device id, enter "n" when prompted and have your desired device open before starting this program. Copy the id for your device and continue to follow the prompts on the terminal. A file named "program_info_file"  will be created in order that holds all this information for the future. Whenever you want to change any settings run setup.py again, but you do not need to do it everytime you want to use this program.
 
 ## Main.py
-Once everything above is completed, simply running main.py will open your game, spotify, and start your playlist. By grabbing  the needed values from "program_info_file", it checks if the game and spotify is running. If not then then, it will open them. In the background, the program will keep trying to find the device you activated. Once it does, it will start the playlist and the program will end.
+Once everything above is completed, simply running main.py will open your game, spotify, and start your playlist. By grabbing the needed values from "program_info_file", it checks if the game and spotify is running. If not, it will open them. In the background, the program will keep trying to find the device you activated. Once it does, it will start the playlist and the program will end.
